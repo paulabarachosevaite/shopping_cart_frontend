@@ -10,7 +10,7 @@ function Cart() {
     0
   );
   const onCheckout = async () => {
-    await fetch("https://react-shopping-cart-api.onrender.com/checkout", {
+    await fetch(process.env.REACT_APP_API_URL + "/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
